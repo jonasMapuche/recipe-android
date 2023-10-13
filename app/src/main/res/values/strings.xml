@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Recipe</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_bot">Bot</string>
+
+    <string name="text_bot">Bot</string>
+    <string name="text_setting">Setting</string>
+
+    <string name="description_bot">Bot</string>
+    <string name="description_bot_title">Bot</string>
+
+    <string name="hint_input">Informe a fórmula</string>
+
+    <string name="title_menu">Bot</string>
+    <string name="title_setting">About</string>
+    <string name="title_bot">Welcome to Letter Bot!</string>
+
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+
+    <string name="text_element_ion_1">Element Ion 1</string>
+    <string name="text_element_ion_2">Element Ion 2</string>
+    <string name="text_element_cov_1">Element Covalent 1</string>
+    <string name="text_element_cov_2">Element Covalent 2</string>
+    <string name="text_element_metal_1">Element Metal 1</string>
+    <string name="text_element_metal_2">Element Metal 2</string>
+    <string name="text_level_ion_1">Level Ion 1</string>
+    <string name="text_level_ion_2">Level Ion 2</string>
+    <string name="text_level_cov_1">Level Covalent 1</string>
+    <string name="text_level_cov_2">Level Covalent 2</string>
+    <string name="text_level_metal_1">Level Metal 1</string>
+    <string name="text_level_metal_2">Level Metal 2</string>
+
+</resources>

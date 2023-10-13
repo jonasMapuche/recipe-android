@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/letter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tex_viw_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="@dimen/setting_title_top"
+        android:layout_marginStart="@dimen/setting_title_left"
+        android:text="@string/title_setting"
+        android:textSize="16sp"
+        android:textColor="@color/fab"/>
+
+    <View
+        android:id="@+id/viw_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_background_top" />
+
+    <TextView
+        android:id="@+id/tex_viw_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="@dimen/setting_about_top"
+        android:layout_marginStart="@dimen/setting_about_left"
+        android:text="@string/title_setting"
+        android:textSize="16sp"
+        android:textColor="@color/letter"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
