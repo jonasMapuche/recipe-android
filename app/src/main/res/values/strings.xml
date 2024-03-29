@@ -19,17 +19,17 @@
     <string name="navigation_drawer_open">Drawer Open</string>
     <string name="navigation_drawer_close">Drawer Closed</string>
 
-    <string name="text_element_ion_1">Element Ion 1</string>
-    <string name="text_element_ion_2">Element Ion 2</string>
-    <string name="text_element_cov_1">Element Covalent 1</string>
-    <string name="text_element_cov_2">Element Covalent 2</string>
-    <string name="text_element_metal_1">Element Metal 1</string>
-    <string name="text_element_metal_2">Element Metal 2</string>
-    <string name="text_level_ion_1">Level Ion 1</string>
-    <string name="text_level_ion_2">Level Ion 2</string>
-    <string name="text_level_cov_1">Level Covalent 1</string>
-    <string name="text_level_cov_2">Level Covalent 2</string>
-    <string name="text_level_metal_1">Level Metal 1</string>
-    <string name="text_level_metal_2">Level Metal 2</string>
+    <string name="text_element_1">Element 1</string>
+    <string name="text_element_2">Element 2</string>
+    <string name="text_element_3">Element 3</string>
+    <string name="text_element_4">Element 4</string>
+    <string name="text_element_5"></string>
+    <string name="text_element_6"></string>
+    <string name="text_element_7"></string>
+    <string name="text_element_8"></string>
+    <string name="text_element_9"></string>
+    <string name="text_element_10"></string>
+    <string name="text_element_11"></string>
+    <string name="text_element_12"></string>
 
 </resources>

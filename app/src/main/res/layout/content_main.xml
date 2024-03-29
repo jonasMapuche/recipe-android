@@ -19,7 +19,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/liner_element_ion_1"
+                android:id="@+id/liner_element_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -27,30 +27,30 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_element_ion_1"
+                    android:id="@+id/floating_element_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_element_ion_1"
-                    android:labelFor="@id/text_element_ion_1"
+                    android:contentDescription="@string/text_element_1"
+                    android:labelFor="@id/text_element_1"
                     app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
                 <TextView
-                    android:id="@+id/text_element_ion_1"
+                    android:id="@+id/text_element_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_element_ion_1"
+                    android:text="@string/text_element_1"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_element_ion_2"
+                android:id="@+id/liner_element_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -58,30 +58,30 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_element_ion_2"
+                    android:id="@+id/floating_element_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_element_ion_2"
-                    android:labelFor="@id/text_element_ion_2"
+                    android:contentDescription="@string/text_element_2"
+                    android:labelFor="@id/text_element_2"
                     app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
                 <TextView
-                    android:id="@+id/text_element_ion_2"
+                    android:id="@+id/text_element_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_element_ion_2"
+                    android:text="@string/text_element_2"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_element_cov_1"
+                android:id="@+id/liner_element_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -89,30 +89,30 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_element_cov_1"
+                    android:id="@+id/floating_element_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_element_cov_1"
-                    android:labelFor="@id/text_element_cov_1"
+                    android:contentDescription="@string/text_element_3"
+                    android:labelFor="@id/text_element_3"
                     app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
                 <TextView
-                    android:id="@+id/text_element_cov_1"
+                    android:id="@+id/text_element_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_element_cov_1"
+                    android:text="@string/text_element_3"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_element_cov_2"
+                android:id="@+id/liner_element_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -120,30 +120,30 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_element_cov_2"
+                    android:id="@+id/floating_element_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_element_cov_2"
-                    android:labelFor="@id/text_element_cov_2"
+                    android:contentDescription="@string/text_element_4"
+                    android:labelFor="@id/text_element_4"
                     app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
                 <TextView
-                    android:id="@+id/text_element_cov_2"
+                    android:id="@+id/text_element_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_element_cov_2"
+                    android:text="@string/text_element_4"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_element_metal_1"
+                android:id="@+id/liner_element_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -151,30 +151,30 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_element_metal_1"
+                    android:id="@+id/floating_element_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_element_metal_1"
-                    android:labelFor="@id/text_element_metal_1"
+                    android:contentDescription="@string/text_element_5"
+                    android:labelFor="@id/text_element_5"
                     app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
                 <TextView
-                    android:id="@+id/text_element_metal_1"
+                    android:id="@+id/text_element_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_element_metal_1"
+                    android:text="@string/text_element_5"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_level_ion_1"
+                android:id="@+id/liner_element_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -182,31 +182,30 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_level_ion_1"
+                    android:id="@+id/floating_elemtent_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_level_ion_1"
-                    android:labelFor="@id/text_level_ion_1"
-                    android:rotation="180"
-                    android:src="@android:drawable/ic_menu_upload" />
+                    android:contentDescription="@string/text_element_6"
+                    android:labelFor="@id/text_element_6"
+                    android:src="@android:drawable/ic_menu_myplaces" />
 
                 <TextView
-                    android:id="@+id/text_level_ion_1"
+                    android:id="@+id/text_element_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_level_ion_1"
+                    android:text="@string/text_element_6"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_level_ion_2"
+                android:id="@+id/liner_element_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -214,31 +213,30 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_level_ion_2"
+                    android:id="@+id/floating_element_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_level_ion_2"
-                    android:labelFor="@id/text_level_ion_2"
-                    android:rotation="180"
-                    android:src="@android:drawable/ic_menu_upload" />
+                    android:contentDescription="@string/text_element_7"
+                    android:labelFor="@id/text_element_7"
+                    android:src="@android:drawable/ic_menu_myplaces" />
 
                 <TextView
-                    android:id="@+id/text_level_ion_2"
+                    android:id="@+id/text_element_7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_level_ion_2"
+                    android:text="@string/text_element_7"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
-
+<!--
             <LinearLayout
-                android:id="@+id/liner_level_cov_1"
+                android:id="@+id/liner_element_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -246,31 +244,31 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_level_cov_1"
+                    android:id="@+id/floating_element_8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_level_cov_1"
-                    android:labelFor="@id/text_level_cov_1"
+                    android:contentDescription="@string/text_element_8"
+                    android:labelFor="@id/text_element_8"
                     android:rotation="180"
                     android:src="@android:drawable/ic_menu_upload" />
 
                 <TextView
-                    android:id="@+id/text_level_cov_1"
+                    android:id="@+id/text_element_8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_level_cov_1"
+                    android:text="@string/text_element_8"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_level_cov_2"
+                android:id="@+id/liner_element_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -278,31 +276,31 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_level_cov_2"
+                    android:id="@+id/floating_element_9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_level_cov_2"
-                    android:labelFor="@id/text_level_cov_2"
+                    android:contentDescription="@string/text_element_9"
+                    android:labelFor="@id/text_element_9"
                     android:rotation="180"
                     android:src="@android:drawable/ic_menu_upload" />
 
                 <TextView
-                    android:id="@+id/text_level_cov_2"
+                    android:id="@+id/text_element_9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_level_cov_2"
+                    android:text="@string/text_element_9"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_level_metal_1"
+                android:id="@+id/liner_element_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -311,31 +309,31 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_level_metal_1"
+                    android:id="@+id/floating_element_10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_level_metal_1"
-                    android:labelFor="@id/text_level_metal_1"
+                    android:contentDescription="@string/text_element_10"
+                    android:labelFor="@id/text_element_10"
                     android:rotation="180"
                     android:src="@android:drawable/ic_menu_upload" />
 
                 <TextView
-                    android:id="@+id/text_level_metal_1"
+                    android:id="@+id/text_element_10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_level_metal_1"
+                    android:text="@string/text_element_10"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/liner_level_metal_2"
+                android:id="@+id/liner_element_11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -343,28 +341,29 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floating_level_metal_2"
+                    android:id="@+id/floating_element_11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:backgroundTint="@color/fab"
-                    android:contentDescription="@string/text_level_metal_2"
-                    android:labelFor="@id/text_level_metal_2"
+                    android:contentDescription="@string/text_element_11"
+                    android:labelFor="@id/text_element_11"
                     android:rotation="180"
                     android:src="@android:drawable/ic_menu_upload" />
 
                 <TextView
-                    android:id="@+id/text_level_metal_2"
+                    android:id="@+id/text_element_11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="@string/text_level_metal_2"
+                    android:text="@string/text_element_11"
                     android:textAlignment="gravity"
                     android:textSize="18sp" />
             </LinearLayout>
+-->
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

@@ -17,6 +17,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
+import java.net.UnknownHostException;
+
 import br.com.stomach.recipe.databinding.ActivityMainBinding;
 import br.com.stomach.recipe.views.BotView;
 import br.com.stomach.recipe.views.MainView;
@@ -58,7 +60,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigation = 0;
 
-        MainView home = new MainView(this);
+        try {
+            MainView home = new MainView(this);
+        } catch (UnknownHostException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
