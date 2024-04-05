@@ -1,27 +1,33 @@
-package br.com.stomach.recipe.viewsmodels;
+package br.com.stomach.recipe.parsers;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import br.com.stomach.recipe.models.ElementModel;
 import br.com.stomach.recipe.models.EquationModel;
 
-public class EquationViewModel {
+public class EquationParser {
     public EquationModel parse(String json) {
         try {
             EquationModel equation = new EquationModel();
             JSONObject jsonObj = new JSONObject(json);
-            equation.setName(Collections.singletonList(jsonObj.getString("name")));
+            equation.setType(jsonObj.getString("type"));
+            JSONArray array = jsonObj.getJSONArray("name");
+            List<String> name = new ArrayList<String>();
+            for (int i=0; i < array.length(); i++) {
+                String item = array.get(i).toString();
+                name.add(item);
+            }
+            equation.setName(name);
             equation.setInitial(jsonObj.getString("initial"));
             equation.setType(jsonObj.getString("type"));
-            JSONArray array = jsonObj.getJSONArray("element");
-            for (int i=0; i < array.length(); i++) {
-                JSONObject objArray = array.getJSONObject(i);
+            JSONArray array2 = jsonObj.getJSONArray("element");
+            for (int i=0; i < array2.length(); i++) {
+                JSONObject objArray = array2.getJSONObject(i);
                 ElementModel element = new ElementModel();
                 element.setName(objArray.getString("name"));
                 element.setAmount(Integer.parseInt(objArray.getString("amount")));

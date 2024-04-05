@@ -4,8 +4,9 @@ import android.os.AsyncTask;
 
 import java.util.concurrent.ExecutionException;
 
-import br.com.stomach.recipe.helpers.HttpRecipe;
+import br.com.stomach.recipe.services.HttpRecipe;
 import br.com.stomach.recipe.models.EquationModel;
+import br.com.stomach.recipe.parsers.EquationParser;
 
 public class RecipeViewModel {
 
@@ -27,7 +28,7 @@ public class RecipeViewModel {
         protected EquationModel doInBackground(Void... voids) {
             HttpRecipe http = new HttpRecipe();
             String response = http.getEquation(initial);
-            EquationViewModel equation = new EquationViewModel();
+            EquationParser equation = new EquationParser();
             return equation.parse(response);
         }
     }

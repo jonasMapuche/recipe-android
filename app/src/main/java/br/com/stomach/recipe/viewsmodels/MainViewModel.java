@@ -18,7 +18,7 @@ public class MainViewModel {
         } catch (Exception e) {
             e.toString();
         }
-        return equation.getInitial();
+        return equation.getName().get(0);
     }
 
 }

@@ -1,0 +1,38 @@
+package br.com.stomach.recipe.viewsmodels;
+
+import android.os.Handler;
+import android.os.HandlerThread;
+
+import java.util.concurrent.ExecutionException;
+
+import br.com.stomach.recipe.models.GolangModel;
+import br.com.stomach.recipe.parsers.GolangParser;
+import br.com.stomach.recipe.services.HttpGolang;
+
+public class GolangViewModel {
+
+    private String initial;
+
+    private GolangModel golangModel;
+
+    public GolangModel getMessage (String initial) throws ExecutionException, InterruptedException {
+        this.initial = initial;
+        return golangModel;
+    }
+
+    public GolangViewModel() {
+
+        HandlerThread handlerThread = new HandlerThread("Golang");
+        handlerThread.start();
+        final Handler handler = new Handler(handlerThread.getLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                HttpGolang httpMessage = new HttpGolang();
+                String response = httpMessage.getMessage();
+                GolangParser golang = new GolangParser();
+                golangModel = golang.parse(response);
+            }
+        }, 5000);
+    }
+}

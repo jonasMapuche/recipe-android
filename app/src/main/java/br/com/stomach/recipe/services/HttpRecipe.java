@@ -1,16 +1,16 @@
-package br.com.stomach.recipe.helpers;
+package br.com.stomach.recipe.services;
 
-import java.io.BufferedReader;
+import static br.com.stomach.recipe.helpers.Util.deserializeResponse;
+
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class HttpRecipe {
 
-    private static String url = "http://192.168.0.18:8080/recipe/equation/";
+    private static String url = "http://api.stomach.com.br:8884/recipe/equation/";
     public static String getEquation(String initial) {
         String response = "";
         try {
@@ -40,19 +40,4 @@ public class HttpRecipe {
         return response;
     }
 
-    private static String deserializeResponse(InputStream stream) {
-        StringBuffer buffer = new StringBuffer();
-        try{
-            BufferedReader response;
-            String line;
-            response = new BufferedReader(new InputStreamReader(stream));
-            while((line = response.readLine())!=null){
-                buffer.append(line);
-            }
-            response.close();
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        return buffer.toString();
-    }
 }

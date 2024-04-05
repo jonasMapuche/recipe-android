@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private int navigation;
 
+    private String text_button_1 = "NaHCO3";
+    private String text_button_2 = "HClO";
+    private String text_button_3 = "OH-";
+    private String text_button_4 = "H+";
+
     private static double ACTION_BACK = 16908332;
 
     @Override
@@ -52,6 +57,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View view) {
                 NavigationBot();
+            }
+        });
+
+        FloatingActionButton fab_element_1 = (FloatingActionButton) findViewById(R.id.floating_element_1);
+        fab_element_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BotButton(text_button_1);
+            }
+        });
+        FloatingActionButton fab_element_2 = (FloatingActionButton) findViewById(R.id.floating_element_2);
+        fab_element_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BotButton(text_button_2);
+            }
+        });
+        FloatingActionButton fab_element_3 = (FloatingActionButton) findViewById(R.id.floating_element_3);
+        fab_element_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BotButton(text_button_3);
+            }
+        });
+        FloatingActionButton fab_element_4 = (FloatingActionButton) findViewById(R.id.floating_element_4);
+        fab_element_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BotButton(text_button_4);
             }
         });
 
@@ -150,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
-    public void NavigationBot() {
+    private void Bot() {
         FrameLayout frame_main;
         frame_main = (FrameLayout) findViewById(R.id.frm_lay_main);
         frame_main.setVisibility(View.INVISIBLE);
@@ -167,7 +201,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         binding.appBarMain.toolbar.setNavigationIcon(R.drawable.ic_back);
 
         navigation = 1;
-
-        BotView bot = new BotView(this);
     }
+
+    public void NavigationBot() {
+        Bot();
+        BotView bot = new BotView();
+        bot.BotNew(this);
+    }
+
+    public void BotButton(String equation) {
+        Bot();
+        BotView bot = new BotView();
+        bot.BotButton(this, equation);
+    }
+
 }
