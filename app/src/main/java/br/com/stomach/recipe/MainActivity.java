@@ -53,41 +53,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.floating_plus);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavigationBot();
-            }
-        });
+        fab.setOnClickListener(view -> NavigationBot());
 
         FloatingActionButton fab_element_1 = (FloatingActionButton) findViewById(R.id.floating_element_1);
-        fab_element_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BotButton(text_button_1);
-            }
-        });
+        fab_element_1.setOnClickListener(view -> BotButton(text_button_1));
         FloatingActionButton fab_element_2 = (FloatingActionButton) findViewById(R.id.floating_element_2);
-        fab_element_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BotButton(text_button_2);
-            }
-        });
+        fab_element_2.setOnClickListener(view -> BotButton(text_button_2));
         FloatingActionButton fab_element_3 = (FloatingActionButton) findViewById(R.id.floating_element_3);
-        fab_element_3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BotButton(text_button_3);
-            }
-        });
+        fab_element_3.setOnClickListener(view -> BotButton(text_button_3));
         FloatingActionButton fab_element_4 = (FloatingActionButton) findViewById(R.id.floating_element_4);
-        fab_element_4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                BotButton(text_button_4);
-            }
-        });
+        fab_element_4.setOnClickListener(view -> BotButton(text_button_4));
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
