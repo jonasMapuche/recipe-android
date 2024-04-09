@@ -28,20 +28,26 @@ public class BotAdapter extends RecyclerView.Adapter <BotAdapter.ViewHolder> {
     @NonNull
     @Override
     public BotAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View item_view_receiver = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_received_message, parent, false);
-        //ReceiverViewHolder view_holder_receiver = new ReceiverViewHolder(item_view_receiver);
-        return new ViewHolder(item_view_receiver);
-
+        if (viewType == VIEW_TYPE_RECEIVED) {
+            View item_view_receiver = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_received_message, parent, false);
+            return new ViewHolder(item_view_receiver, VIEW_TYPE_RECEIVED);
+        } else {
+            View item_view_sender = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_send_message, parent, false);
+            return new ViewHolder(item_view_sender, VIEW_TYPE_SEND);
+        }
     }
 
     public int getItemViewType(int position) {
-        return 0;
+        if (this.message.get(position).sender==VIEW_TYPE_SEND) return VIEW_TYPE_SEND;
+        else return VIEW_TYPE_RECEIVED;
     }
 
     @Override
     public void onBindViewHolder(@NonNull BotAdapter.ViewHolder holder, final int position) {
-        holder.getTextView().setText(message.get(position).text);
+        if (getItemViewType(position) == VIEW_TYPE_RECEIVED)
+            holder.getTextView().setText(message.get(position).text);
+        else
+            holder.getTextView().setText(message.get(position).text);
     }
 
     @Override
@@ -51,9 +57,12 @@ public class BotAdapter extends RecyclerView.Adapter <BotAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textView;
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView, int viewType) {
             super(itemView);
-            textView = (TextView) itemView.findViewById(R.id.txt_viw_received);
+            if (viewType == VIEW_TYPE_RECEIVED)
+                textView = (TextView) itemView.findViewById(R.id.txt_viw_received);
+            else
+                textView = (TextView) itemView.findViewById(R.id.txt_viw_send);
         }
         public TextView getTextView() {
             return textView;
